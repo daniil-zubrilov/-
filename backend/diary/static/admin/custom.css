@@ -1,0 +1,126 @@
+/* Основной фон и шрифты */
+:root {
+    --primary: #ff5a1f;
+    --secondary: #171a21;
+    --accent: #ff7a45;
+    --bg-dark: #0f1115;
+    --card-dark: #1c2029;
+    --border-dark: #262b36;
+    --text-main: #e6e8ee;
+    --text-muted: #8b93a7;
+}
+
+body {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-main) !important;
+    font-family: 'Inter', system-ui, sans-serif !important;
+}
+
+/* Шапка */
+#header {
+    background: var(--card-dark) !important;
+    border-bottom: 1px solid var(--border-dark) !important;
+    color: var(--text-main) !important;
+}
+
+#branding h1, #branding h1 a {
+    color: var(--primary) !important;
+    font-weight: 700 !important;
+}
+
+/* Ссылки */
+a:link, a:visited {
+    color: var(--accent) !important;
+}
+a:hover {
+    color: var(--primary) !important;
+}
+
+/* Боковая панель */
+#nav-sidebar {
+    background: var(--card-dark) !important;
+    border-right: 1px solid var(--border-dark) !important;
+}
+
+#nav-sidebar .current-app .section:link,
+#nav-sidebar .current-app .section:visited {
+    color: var(--primary) !important;
+}
+
+/* Модули (карточки) */
+.module {
+    background: var(--card-dark) !important;
+    border: 1px solid var(--border-dark) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35) !important;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: var(--secondary) !important;
+    color: var(--text-main) !important;
+    font-weight: 600 !important;
+}
+
+/* Таблицы */
+table {
+    background: var(--card-dark) !important;
+    color: var(--text-main) !important;
+}
+
+th, td {
+    border-bottom: 1px solid var(--border-dark) !important;
+}
+
+thead th {
+    background: var(--secondary) !important;
+    color: var(--text-muted) !important;
+}
+
+tr:nth-child(even) {
+    background: var(--bg-dark) !important;
+}
+
+/* Кнопки */
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+    background: var(--primary) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    font-weight: 600 !important;
+    transition: 0.2s;
+}
+
+.button:hover, input[type=submit]:hover, input[type=button]:hover {
+    background: var(--accent) !important;
+}
+
+.button.default, input[type=submit].default, .submit-row input.default {
+    background: var(--primary) !important;
+}
+
+/* Поля ввода */
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=number], textarea, select, .vTextField {
+    background: var(--secondary) !important;
+    border: 1px solid var(--border-dark) !important;
+    color: var(--text-main) !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--primary) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(255, 90, 31, 0.18) !important;
+}
+
+/* Хлебные крошки */
+div.breadcrumbs {
+    background: var(--secondary) !important;
+    color: var(--text-muted) !important;
+}
+
+div.breadcrumbs a {
+    color: var(--text-main) !important;
+}

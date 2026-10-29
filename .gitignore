@@ -1,0 +1,9 @@
+.env
+uploads/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+.vite/
+*.sqlite3
+.DS_Store
